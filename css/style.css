@@ -1,0 +1,202 @@
+:root {
+    --bgColor1: black;
+    --darkThemeTitleText: whitesmoke;
+    --darkTextForLightBg: black;
+    --codeText1: rgb(5, 236, 236);
+    --codeText2: violet;
+    --codeText3: green;
+    --codeText4: orange;
+}
+
+/* utilites */
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.slides-navigation {
+    z-index: 6;
+}
+
+.navIcon {
+    width: 5vh;
+    margin: 2vw;
+}
+
+
+.titleMessage {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    top: 40vh;
+    z-index: 5;
+    text-align: center;
+}
+
+.heading {
+    /* border: 1px solid black; */
+    text-shadow: 0px 2vh 5vh rgba(0, 0, 0, 0.5);
+    font-weight: 100;
+    letter-spacing: 1vw;
+}
+
+.mainTitle {
+    color: var(--darkThemeTitleText);
+    font-size: 6vh;
+}
+
+.subTitle {
+    color: var(--darkThemeTitleText);
+    font-size: 3vh;
+}
+
+.section {
+    padding: 3vh 0;
+}
+
+.aboutImg {
+    max-width: 100%;
+}
+
+.darkSection {
+    background-color: var(--bgColor1);
+    color: var(--codeText1);
+}
+
+.contactBtn {
+    color: var(--codeText1);
+    display: inline-block;
+    border: 1px solid var(--codeText1);
+    border-radius: 2vh;
+    text-decoration: none;
+    padding: 2vh;
+    box-shadow:inset 0 0 8px 4px var(--codeText1),inset 0 0 20px 6px var(--codeText1);
+}
+
+.contactBtn:hover {
+    color: var(--codeText1);
+    border-color: var(--codeText2);
+    box-shadow:inset 0 0 8px 4px var(--codeText2),inset 0 0 20px 6px var(--codeText2);
+}
+
+.section .heading {
+    margin-bottom: 2vh;
+}
+
+.filters a {
+    color: var(--darkTextForLightBg);
+    border: 1px solid var(--bgColor1);
+    border-radius: 1vw;
+    padding: 1vh;
+    display: block;
+    text-decoration: none;
+}
+
+.filter ul {
+    padding: 0;
+}
+
+.filter a:hover {
+    background-color: var(--codeText1);
+}
+
+.filter li {
+    display: inline-block;
+    margin: 1vw;
+    
+}
+
+.filter .current {
+    color: var(--codeText2);
+    border-color: var(--codeText2);
+    background-color: var(--bgColor1);
+}
+
+.items {padding: 0;}
+
+.items li {
+    display: inline-block;
+    padding: 1vh;
+    max-width: 100%;
+}
+
+.items .item {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    opacity: 0;
+
+    transition: all 0.15s linear, 1s;
+}
+
+.item:hover .imageOverlay {
+    opacity: 1;
+}
+
+.items h4 {
+    height: 8vh;
+}
+
+.items a {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 1vw;
+    padding: 1vh;
+    margin: 0.4vw;
+    border: 1px solid transparent;
+}
+
+.items a:hover {
+    background-color: var(--codeText1);
+    border: 1px solid black;
+}
+
+.items .openBtn {
+    margin-right: 50vw;
+}
+
+.items .projectLink {
+    margin-left: 50vw;
+}
+
+.items .item:hover .openBtn {
+    margin-right: 0.4vw;
+    transition: all 0.15s linear, 0.3s;
+}
+
+.items .item:hover .projectLink {
+    margin-left: 0.4vw;
+    transition: all 0.15s linear, 0.3s;
+}
+
+.items .item:hover img {
+    transform: scale(1.3, 1.3);
+    transition: all 0.15s linear, 0.5s;
+}
+
+footer p {
+    margin: 0;
+}
